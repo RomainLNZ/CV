@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    background-image: url("../img/background1.jpg");
+    font-size: Arial, Helvetica, sans-serif;
+    font-family: "Archivo Black", sans-serif;
+    font-style: normal;
+    color: white;
+
+}
+
+header {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header > div {
+    margin: 2rem;
+}
+
+.photo {
+    width: 15rem;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15rem;
+    background: linear-gradient(to top, darkblue, #9932cc);
+}
+
+.photo > div {
+    width: 95%;
+    height: 95%;
+    border-radius: 15rem;
+    background-image: url('https://i.pravatar.cc');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 95%;
+}
+
+.title h1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.title span {
+    color: #9932cc;
+}
+
+.line {
+    width: .1rem;
+    height: 80%;
+    border-radius: 1rem;
+    background: white;
+}
+
+.about {
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+        /* background: red; */
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.phone {
+    width: 5%;
+    height: 5rem;
+    border-radius: 50%;
+    background-image: linear-gradient(-90deg, #0011de 0%, #FC00FF 100%);
+    background-image: url("../img/phone.png");
+}
+
+.email {
+    background: rgb(43, 0, 255);
+    width: 5%;
+    height: 5rem;
+    border-radius: 50%;
+    background-image: linear-gradient(-90deg, #0011de 0%, #FC00FF 100%);
+}
+
+.linkedin {
+    background: rgb(43, 0, 255);
+    width: 5%;
+    height: 5rem;
+    border-radius: 50%;
+    background-image: linear-gradient(-90deg, #0011de 0%, #FC00FF 100%);
+}
+
+.skills, .experiences{
+    width: 80%;
+    height: 50rem;
+    margin: 10%;
+    border-radius: 1%;
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.36);
+}
+
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .about {
+        max-width: 100%;
+        width: 100%;
+    }
+}

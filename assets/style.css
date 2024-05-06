@@ -1,0 +1,221 @@
+body {
+    background-image: url("./img/background1.jpg");
+    font-size: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+p, h1, h2 {
+    font-family: "Archivo Black", sans-serif;
+    font-style: normal;
+}
+
+header {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    padding-right: 50%;
+    color: rgb(255, 255, 255);
+}
+
+.container__left{
+        /* background-color: rgb(212, 248, 207); */
+    width: 70%;
+    height: 100%;
+    margin: 3%;
+    display: flex;
+    align-items: center;
+    /* justify-content:space-between; */
+}
+
+/* Cerle autour de la photo */
+.container__photo {
+    height: 80%;
+    margin-left: 20%;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15rem;
+    background: linear-gradient(to top, darkblue, #9932cc);
+}
+
+/* Photo */
+.photo {
+    width: 95%;
+    height: 95%;
+    border-radius: 15rem;
+    background-image: url('https://i.pravatar.cc');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nom {    
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10%;
+    font-size: 300%;
+}
+
+.metier{
+    font-size: 50%;
+}
+
+
+/* Couleur nom de famille */
+.nom > p > span {
+    color: #9932cc;
+}
+
+
+.trait {
+    height: 80%;
+    margin-top: 5%;
+    /* display: flex; */
+    /* justify-content: center; */
+    border-right: 1px solid white;
+}
+
+.container__right {
+    /* background: rgb(222, 147, 147); */
+    width: 35%;
+    height: 100%;
+    margin: 5%;
+    /* text-align: center; */
+    text-align: justify;
+}
+
+.a__propos{
+    width: 80%;
+    font-size: 95%;
+}
+
+.contact {
+    height: 100%;
+    width: 90%;
+    font-size: 75%; /* Police en % !!!!! */
+    display: flex;
+    justify-content: space-between;
+    /* font-weight: 900; */
+}
+
+.contact__fields     {
+    font-weight: 900;
+    /* font-size: large; */
+    align-self: flex-start;
+}
+
+.skills, .experiences{
+    width: 80%;
+    height: 50rem;
+    margin: 10%; */
+    /* background-color: #0011de;  */
+    /* background-image: linear-gradient(#0011de 0%, #FC00FF); */
+    /* opacity: 0.2; */
+    border-radius: 1%;*/
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.36);
+}
+
+.experiences > h1 {
+    color: white;
+    opacity: 1;
+}
+
+
+.bonus {
+    width: 80%;
+    height: 15rem;
+    display: flex;
+    margin: 10%;
+    align-items: center;
+    justify-content: space-around;
+    /* opacity: 0.2; */
+}
+
+.bonus__hobbies, .bonus__autres{
+    width: 40%;
+    height: 20rem;
+    border-radius: 1%;
+    background-image: linear-gradient(90deg, #0011de 0%, #FC00FF 100%);
+}
+.bonus__hobbies__logo {
+    width: 100%;
+    height: 5rem;
+    /* background: white; */
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+
+.hobbies__logo1{
+    width: 16%;
+    height: 95%;
+    border-radius: 15rem;
+    background-image: linear-gradient(-90deg, #0011de 0%, #FC00FF 100%);
+}
+
+.hobbies__logo2{
+    width: 16%;
+    height: 95%;
+    border-radius: 15rem;
+    background-image: url(img/gloves.png);
+    background-image: linear-gradient(-90deg, #0011de 0%, #FC00FF 100%);
+}
+
+.hobbies__logo3{
+    width: 16%;
+    height: 95%;
+    border-radius: 15rem;
+    background-image: url(img/gloves.png);
+    background-image: linear-gradient(-90deg, #0011de 0%, #FC00FF 100%);
+}
+
+
+@media screen and (max-width: 1145px) {
+    
+    header {
+        flex-direction: column;
+    }
+    .contact {
+        display: none;
+    }
+
+    .a__propos{
+        width: 90%;
+        margin-left: 80%;
+    }
+
+    .trait {
+        border-bottom: 1px solid white;
+        width: 55%;
+        margin-left: 22%;
+
+    }
+
+}
+
+
+@media screen and (max-width: 660px){
+    
+    .container__left {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 15%;
+    }
+
+
+}
