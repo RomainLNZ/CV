@@ -17,7 +17,6 @@ header {
     align-items: center;
 }
 
-
 header > div {
     margin: 2rem;
 }
@@ -59,6 +58,10 @@ header > div {
     color: #F54586;
 }
 
+.title > p {
+    font-size: 100;
+}
+
 .line {
     width: .1rem;
     height: 80%;
@@ -67,68 +70,60 @@ header > div {
 }
 
 .about {
-    max-width: 30%;
+    max-width: 20%;
     display: flex;
     flex-direction: column;
 }
 
 .about > p{
     font-family: "Roboto", sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-style: normal;
 }
 
-
 .contact {
-        /* background: red; */
     width: 100%;
     height: 5rem;
     display: flex;
     justify-content: space-between;
 }
 
-.phone {
-    width: calc(100% /3);
-    height: 5rem;
+.contact > div {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 .5rem;
     border-radius: 50%;
-    background-image: linear-gradient(-90deg, #F54586 0%, #5353A7 100%);
-    /* background-image: url("../img/phone.png"); */
+    background: linear-gradient(-90deg, #F54586 0%, #5353A7 100%);
 }
 
-.email {
-    /* background: rgb(43, 0, 255); */
-    width: calc(100% /3);
-    height: 5rem;
-    border-radius: 50%;
-    background-image: linear-gradient(-90deg, #F54586 0%, #5353A7 100%);
-    background-image: url("../img/Email.svg");
-    background-size: cover;
-    background-position: center;
-    /* background-repeat: no-repeat; */
-
-
+.contact > .phone {
+    margin-left: 0;
 }
 
-.linkedin {
-    /* background: rgb(43, 0, 255); */
-    width: calc(100% /3);
-    height: 5rem;
-    border-radius: 50%;
-    background-image: linear-gradient(-90deg, #F54586 0%, #5353A7 100%);
+.contact > .linkedin {
+    margin-right: 0;
+}
+
+.contact > div a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact > div img {
+    width: 70%
 }
 
 .skills, .experiences{
     width: 80%;
     height: 50rem;
     margin: 10%;
-    border-radius: 1%;
+    border-radius: 10%;
     background-image: linear-gradient(-90deg, #6C264A 0%, #252A57 100%);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    /* border: 1px solid rgba(255, 255, 255, 0.36); */
 }
-
 
 @media screen and (max-width: 1024px) {
     header {
